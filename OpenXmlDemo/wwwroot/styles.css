@@ -1,0 +1,99 @@
+/* اندازه تعیین‌شده هر عنصر، حاشیه و فاصله داخلی آن را هم شامل می‌شود. */
+* {
+    box-sizing: border-box;
+}
+
+/* رنگ‌ها و قلم عمومی صفحه دانلود */
+body {
+    margin: 0;
+    background: #eef3f6;
+    color: #173448;
+    font: 16px/1.9 Tahoma, Arial, sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 24px;
+}
+
+.tag {
+    color: #347b79;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 12px 0;
+    font-size: 36px;
+    line-height: 1.6;
+}
+
+h2 {
+    margin: 0 0 12px;
+}
+
+p {
+    color: #4e6675;
+}
+
+/* دو کارت دانلود در صفحه‌های بزرگ کنار هم قرار می‌گیرند. */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 36px;
+}
+
+article {
+    padding: 32px;
+    border: 1px solid #dce5eb;
+    border-radius: 20px;
+    background: white;
+}
+
+ul {
+    padding-right: 22px;
+    color: #4e6675;
+}
+
+a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: #176c68;
+    color: white;
+    text-decoration: none;
+}
+
+/* کاربر صفحه‌کلید باید بتواند لینک انتخاب‌شده را به‌وضوح تشخیص دهد. */
+a:focus-visible {
+    outline: 3px solid #da9d31;
+    outline-offset: 4px;
+}
+
+.note {
+    margin-top: 28px;
+    font-size: 14px;
+}
+
+code {
+    direction: ltr;
+    unicode-bidi: embed;
+    font-family: Consolas, monospace;
+}
+
+/* در موبایل، کارت‌ها زیر هم می‌آیند تا متن فشرده نشود. */
+@media (max-width: 650px) {
+    main {
+        margin: 20px auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

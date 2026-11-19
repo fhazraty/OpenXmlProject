@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- نسخه دات‌نت و بررسی دسترسی به مقدارهای احتمالی null -->
+    <TargetFramework>net11.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- کتابخانه ساخت و اعتبارسنجی فایل‌های استاندارد Office -->
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- تصویر همراه برنامه بسته‌بندی می‌شود تا به مسیر فایل روی سرور وابسته نباشد. -->
+    <EmbeddedResource Include="Assets/report.png" />
+  </ItemGroup>
+</Project>
